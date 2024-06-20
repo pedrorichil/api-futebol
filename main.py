@@ -4,20 +4,19 @@ import json
 
 class Jogos:
     def __init__(self):
-        self.url = "https://www.placardefutebol.com.br/"
+        self.url = "https://www.placardefutebol.com.br"
 
     def jogo_ao_vivo(self):
-        url_completa = self.url + 'jogos-em-andamento'
-        response = requests.get(url_completa)
-        soup = BeautifulSoup(response.text, 'html.parser')
+        url_completa = self.url + '/jogos-em-andamento'
+        resposta = requests.get(url_completa)
+        soup = BeautifulSoup(resposta.text, 'html.parser')
 
         # Encontrar todos os jogos em andamento
-        games = soup.find_all('a', href=True, class_=False)
+        jogos = soup.find_all('a', href=True, class_=False)
 
-        # Para armazenar os detalhes dos jogos
-        game_details = []
+        jogos_detalhes = []
 
-        for game in games:
+        for game in jogos:
             league_tag = game.find_previous('h3', class_='match-list_league-name')
             league_name = league_tag.text.strip() if league_tag else 'Unknown League'
 
@@ -44,7 +43,7 @@ class Jogos:
 
                 game_link = game['href'].strip() if 'href' in game.attrs else 'Unknown Link'
 
-                game_details.append({
+                jogos_detalhes.append({
                     'league': league_name,
                     'status': status,
                     'team1': team1,
@@ -54,10 +53,10 @@ class Jogos:
                     'link': game_link
                 })
 
-        with open('jogos_ao_vivo.json', 'w', encoding='utf-8') as json_file:
-            json.dump(game_details, json_file, ensure_ascii=False, indent=4)
+        with open('ao_vivo.json', 'w', encoding='utf-8') as json_file:
+            json.dump(jogos_detalhes, json_file, ensure_ascii=False, indent=4)
 
-        return game_details
+        return jogos_detalhes
 
     def jogos_de_hoje(self):
         pass
