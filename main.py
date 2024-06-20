@@ -56,6 +56,8 @@ class Jogos:
 
         #modo de usar: 'Jogos().jogo_ao_vivo()'
         return jogos_detalhes
+    def probabilidade(self):
+        pass
 
     def jogos_de_hoje(self):
         pass
