@@ -11,7 +11,6 @@ class Jogos:
         resposta = requests.get(url_completa)
         soup = BeautifulSoup(resposta.text, 'html.parser')
 
-        # Encontrar todos os jogos em andamento
         jogos = soup.find_all('a', href=True, class_=False)
 
         jogos_detalhes = []
@@ -23,7 +22,6 @@ class Jogos:
             status_tag = game.find('span', class_='badge')
             status = status_tag.text.strip() if status_tag else 'Unknown Status'
 
-            # Verificar se o status é válido (diferente de 'Unknown Status')
             if status != 'Unknown Status':
                 teams = game.find_all('div', class_='team-name')
                 if len(teams) >= 2:
@@ -56,6 +54,7 @@ class Jogos:
         with open('ao_vivo.json', 'w', encoding='utf-8') as json_file:
             json.dump(jogos_detalhes, json_file, ensure_ascii=False, indent=4)
 
+        #modo de usar: 'Jogos().jogo_ao_vivo()'
         return jogos_detalhes
 
     def jogos_de_hoje(self):
@@ -66,4 +65,3 @@ class Jogos:
 
 
 
-games = Jogos().jogo_ao_vivo()
