@@ -64,8 +64,6 @@ class Jogos:
     def jogos_de_amanha(self):
         pass
 
-# Criar uma instância da classe Jogos
-jogos = Jogos()
 
-# Chamar o método jogo_ao_vivo para obter os detalhes dos jogos em andamento
-games = jogos.jogo_ao_vivo()
+
+games = Jogos().jogo_ao_vivo()
