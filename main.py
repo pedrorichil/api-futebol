@@ -70,12 +70,3 @@ jogos = Jogos()
 
 # Chamar o método jogo_ao_vivo para obter os detalhes dos jogos em andamento
 games = jogos.jogo_ao_vivo()
-
-# Imprimir os detalhes dos jogos
-for game in games:
-    print(f"League: {game['league']}")
-    print(f"Status: {game['status']}")
-    print(f"Team 1: {game['team1']} - Score: {game['score1']}")
-    print(f"Team 2: {game['team2']} - Score: {game['score2']}")
-    print(f"Link: {game['link']}")
-    print('---')
