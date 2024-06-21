@@ -1,32 +1,224 @@
 [
     {
-        "league": "Campeonato Brasileiro",
-        "status": "82 MIN",
-        "team1": "Palmeiras",
-        "score1": "2",
-        "team2": "Bragantino",
-        "score2": "1",
-        "link": "/brasileirao-serie-a/20-06-2024-palmeiras-x-bragantino.html",
-        "stats": null
-    },
-    {
-        "league": "Campeonato Brasileiro - Série B",
-        "status": "78 MIN",
-        "team1": "Ceará",
-        "score1": "0",
-        "team2": "Sport",
+        "league": "Eurocopa",
+        "status": "25 MIN",
+        "team1": "Eslováquia",
+        "score1": "1",
+        "team2": "Ucrânia",
         "score2": "0",
-        "link": "/brasileirao-serie-b/20-06-2024-ceara-x-sport.html",
-        "stats": null
+        "link": "/eurocopa/21-06-2024-eslovaquia-x-ucrania.html",
+        "stats": [
+            "Estatísticas",
+            "Eslováquia",
+            "Ucrânia",
+            "60",
+            "Posse de bola (%)",
+            "40",
+            "152",
+            "Total de passes",
+            "106",
+            "90",
+            "Passes corretos (%)",
+            "89",
+            "6",
+            "Total de chutes",
+            "3",
+            "4",
+            "Chutes no gol",
+            "1",
+            "0",
+            "Escanteios",
+            "0",
+            "0",
+            "Faltas cometidas",
+            "3"
+        ]
     },
     {
-        "league": "EUA - WPSL",
-        "status": "52 MIN",
-        "team1": "Griffins Feminino",
-        "score1": "0",
-        "team2": "Utah Surf Feminino",
+        "league": "Copa da China",
+        "status": "96 MIN",
+        "team1": "Yunnan Yukun",
+        "score1": "1",
+        "team2": "Tianjin Teda",
         "score2": "1",
-        "link": "/eua-wpsl/20-06-2024-griffins-feminino-x-utah-surf-feminino.html",
-        "stats": null
+        "link": "/copa-china/21-06-2024-yunnan-yukun-x-tianjin-teda.html",
+        "stats": [
+            "Estatísticas",
+            "Yunnan Yukun",
+            "Tianjin Teda",
+            "13",
+            "Total de chutes",
+            "9",
+            "3",
+            "Chutes no gol",
+            "4",
+            "6",
+            "Escanteios",
+            "4"
+        ]
+    },
+    {
+        "league": "Copa da China",
+        "status": "97 MIN",
+        "team1": "Wuxi Wugou",
+        "score1": "1",
+        "team2": "Meizhou Hakka",
+        "score2": "0",
+        "link": "/copa-china/21-06-2024-wuxi-wugou-x-meizhou-hakka.html",
+        "stats": [
+            "Estatísticas",
+            "Wuxi Wugou",
+            "Meizhou Hakka",
+            "8",
+            "Total de chutes",
+            "14",
+            "4",
+            "Chutes no gol",
+            "2",
+            "0",
+            "Escanteios",
+            "5"
+        ]
+    },
+    {
+        "league": "Copa da China",
+        "status": "67 MIN",
+        "team1": "Guangxi Baoyun",
+        "score1": "4",
+        "team2": "Wuhan Three Towns",
+        "score2": "1",
+        "link": "/copa-china/21-06-2024-guangxi-baoyun-x-wuhan-three-towns.html",
+        "stats": [
+            "Estatísticas",
+            "Guangxi Baoyun",
+            "Wuhan Three Towns",
+            "8",
+            "Total de chutes",
+            "10",
+            "4",
+            "Chutes no gol",
+            "2",
+            "0",
+            "Escanteios",
+            "6",
+            "3",
+            "Faltas cometidas",
+            "0"
+        ]
+    },
+    {
+        "league": "Singapura - S-League",
+        "status": "83 MIN",
+        "team1": "Hougang United",
+        "score1": "1",
+        "team2": "Balestier Khalsa",
+        "score2": "3",
+        "link": "/singapura-s-league/21-06-2024-hougang-united-x-balestier-khalsa.html",
+        "stats": [
+            "Estatísticas",
+            "Hougang United",
+            "Balestier Khalsa",
+            "37",
+            "Posse de bola (%)",
+            "63",
+            "9",
+            "Total de chutes",
+            "15",
+            "6",
+            "Chutes no gol",
+            "7",
+            "4",
+            "Escanteios",
+            "7",
+            "7",
+            "Faltas cometidas",
+            "5"
+        ]
+    },
+    {
+        "league": "Super Liga da Malásia",
+        "status": "26 MIN",
+        "team1": "Negeri Sembilan",
+        "score1": "0",
+        "team2": "Kuala Lumpur",
+        "score2": "0",
+        "link": "/super-liga-malasia/21-06-2024-negeri-sembilan-x-kuala-lumpur.html",
+        "stats": [
+            "Estatísticas",
+            "Negeri Sembilan",
+            "Kuala Lumpur",
+            "31",
+            "Posse de bola (%)",
+            "69",
+            "0",
+            "Total de chutes",
+            "2",
+            "0",
+            "Chutes no gol",
+            "0",
+            "0",
+            "Escanteios",
+            "2"
+        ]
+    },
+    {
+        "league": "Campeonato Etíope",
+        "status": "66 MIN",
+        "team1": "Adama Kenema",
+        "score1": "2",
+        "team2": "Bahardar",
+        "score2": "1",
+        "link": "/campeonato-etiope/21-06-2024-adama-kenema-x-bahardar.html",
+        "stats": [
+            "Match info content not found"
+        ]
+    },
+    {
+        "league": "Cazaquistão - First Division",
+        "status": "68 MIN",
+        "team1": "Ulytau",
+        "score1": "0",
+        "team2": "Khan Tengri",
+        "score2": "1",
+        "link": "/cazaquistao-first-division/21-06-2024-ulytau-x-khan-tengri.html",
+        "stats": [
+            "Match info content not found"
+        ]
+    },
+    {
+        "league": "Cazaquistão - First Division",
+        "status": "63 MIN",
+        "team1": "Ekibastuz",
+        "score1": "3",
+        "team2": "SD Family",
+        "score2": "2",
+        "link": "/cazaquistao-first-division/21-06-2024-ekibastuz-x-sd-family.html",
+        "stats": [
+            "Match info content not found"
+        ]
+    },
+    {
+        "league": "Rússia - Youth League",
+        "status": "70 MIN",
+        "team1": "Rubin Kazan Sub-19",
+        "score1": "2",
+        "team2": "Akademiya Konoplev Sub-20",
+        "score2": "0",
+        "link": "/russia-youth-league/21-06-2024-rubin-kazan-sub-19-x-akademiya-konoplev-sub-20.html",
+        "stats": [
+            "Match info content not found"
+        ]
+    },
+    {
+        "league": "Rússia - Youth League",
+        "status": "68 MIN",
+        "team1": "Nizhny Novgorod Sub-19",
+        "score1": "0",
+        "team2": "CSKA Moscow Sub-19",
+        "score2": "2",
+        "link": "/russia-youth-league/21-06-2024-nizhny-novgorod-sub-19-x-cska-moscow-sub-19.html",
+        "stats": [
+            "Match info content not found"
+        ]
     }
 ]

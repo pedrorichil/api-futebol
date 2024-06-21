@@ -10,7 +10,6 @@ class Jogos:
         soup = BeautifulSoup(resposta.text, 'html.parser')
 
         jogos = soup.find_all('a', href=True, class_=False)
-
         jogos_detalhes = []
 
         for game in jogos:
@@ -40,7 +39,9 @@ class Jogos:
                 game_link = game['href'].strip() if 'href' in game.attrs else 'Unknown Link'
 
                 # Extract game statistics
-                stats = self.extract_game_statistics(game_link)
+                stats = self.extract_match_info(game_link)
+                stats = stats.splitlines()
+
 
                 jogos_detalhes.append({
                     'league': league_name,
@@ -56,16 +57,19 @@ class Jogos:
         with open('ao_vivo.json', 'w', encoding='utf-8') as json_file:
             json.dump(jogos_detalhes, json_file, ensure_ascii=False, indent=4)
 
-    def extract_game_statistics(self, game_link):
-        url_estatistica = self.url + game_link
-        resposta2 = requests.get(url_estatistica)
-        soup2 = BeautifulSoup(resposta2.text, 'html.parser')
-        soup3 = soup2.get_text()
-        soup3 = soup3.replace("        ", "")
-        soup3 = soup3.replace("    ", "")
-        linhas = soup3.splitlines()
-        linhas_nao_em_branco = [linha for linha in linhas if linha.strip() != '']
-        print(linhas_nao_em_branco)
+    def extract_match_info(self, game_link):
+        static = self.url + game_link
+        resposta = requests.get(static)
+        soup = BeautifulSoup(resposta.text, 'html.parser')
 
-if __name__ == "__main__":
-    Jogos().extract_game_statistics('/brasileirao-serie-a/20-06-2024-vitoria-x-atletico-mg.html')
+        # Find the div with class 'container content match-info'
+        match_info_div = soup.find('div', class_='container content match-info')
+
+        # Extract the content as a string
+        if match_info_div:
+            return match_info_div.get_text(separator='\n', strip=True)
+        else:
+            return "Match info content not found"
+
+
+
