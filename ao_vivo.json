@@ -1,65 +1,62 @@
 [
     {
         "league": "Campeonato Brasileiro",
-        "status": "34 MIN",
-        "team1": "Vitória",
-        "score1": "1",
-        "team2": "Atlético-MG",
-        "score2": "1",
-        "link": "/brasileirao-serie-a/20-06-2024-vitoria-x-atletico-mg.html"
-    },
-    {
-        "league": "Campeonato Brasileiro - Série B",
-        "status": "5 MIN",
-        "team1": "Vila Nova",
-        "score1": "0",
-        "team2": "Mirassol",
-        "score2": "0",
-        "link": "/brasileirao-serie-b/20-06-2024-vila-nova-x-mirassol.html"
-    },
-    {
-        "league": "Campeonato Gaúcho - Divisão de Acesso",
-        "status": "5 MIN",
-        "team1": "Monsoon",
-        "score1": "0",
-        "team2": "Aimoré",
-        "score2": "0",
-        "link": "/gaucho-divisao-de-acesso/20-06-2024-monsoon-x-aimore.html"
-    },
-    {
-        "league": "Campeonato Paulista - Feminino",
-        "status": "6 MIN",
-        "team1": "Bragantino Feminino",
-        "score1": "1",
-        "team2": "Realidade Jovem Feminino",
-        "score2": "0",
-        "link": "/campeonato-paulista-feminino/20-06-2024-bragantino-feminino-x-realidade-jovem-feminino.html"
-    },
-    {
-        "league": "Copa Chile",
-        "status": "35 MIN",
-        "team1": "Glorias Navales",
-        "score1": "0",
-        "team2": "Universidad Católica",
-        "score2": "1",
-        "link": "/copa-chile/20-06-2024-glorias-navales-x-universidad-catolica.html"
-    },
-    {
-        "league": "Colômbia - Liga Feminina",
         "status": "INTERVALO",
-        "team1": "América de Cali Feminino",
+        "team1": "Flamengo",
         "score1": "1",
-        "team2": "Deportivo Cali Feminino",
-        "score2": "0",
-        "link": "/colombia-liga-feminina/20-06-2024-america-de-cali-feminino-x-deportivo-cali-feminino.html"
+        "team2": "Bahia",
+        "score2": "1",
+        "link": "/brasileirao-serie-a/20-06-2024-flamengo-x-bahia.html",
+        "stats": [
+            {
+                "label": "Stats Not Available",
+                "value": "N/A"
+            }
+        ]
     },
     {
-        "league": "Paraguai - Campeonato Feminino",
+        "league": "Campeonato Brasileiro - Série D",
         "status": "INTERVALO",
-        "team1": "General Caballero JLM Feminino",
+        "team1": "Treze",
+        "score1": "1",
+        "team2": "Atlético-CE",
+        "score2": "0",
+        "link": "/brasileirao-serie-d/20-06-2024-treze-x-atletico-ce.html",
+        "stats": [
+            {
+                "label": "Stats Not Available",
+                "value": "N/A"
+            }
+        ]
+    },
+    {
+        "league": "Campeonato Baiano - Segunda Divisão",
+        "status": "83 MIN",
+        "team1": "Galícia",
         "score1": "0",
-        "team2": "Sportivo Ameliano Feminino",
-        "score2": "1",
-        "link": "/paraguai-campeonato-feminino/20-06-2024-general-caballero-jlm-feminino-x-sportivo-ameliano-feminino.html"
+        "team2": "Vitória da Conquista",
+        "score2": "0",
+        "link": "/baiano-2-divisao/20-06-2024-galicia-x-vitoria-da-conquista.html",
+        "stats": [
+            {
+                "label": "Stats Not Available",
+                "value": "N/A"
+            }
+        ]
+    },
+    {
+        "league": "UWS",
+        "status": "31 MIN",
+        "team1": "Michigan Legends Feminino",
+        "score1": "1",
+        "team2": "Elite 14 Feminino",
+        "score2": "0",
+        "link": "/uws/20-06-2024-michigan-legends-feminino-x-elite-14-feminino.html",
+        "stats": [
+            {
+                "label": "Stats Not Available",
+                "value": "N/A"
+            }
+        ]
     }
 ]

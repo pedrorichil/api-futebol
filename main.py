@@ -5,10 +5,8 @@ import json
 class Jogos:
     def __init__(self):
         self.url = "https://www.placardefutebol.com.br"
-
-    def jogo_ao_vivo(self):
-        url_completa = self.url + '/jogos-em-andamento'
-        resposta = requests.get(url_completa)
+        url_jogos = self.url + '/jogos-em-andamento'
+        resposta = requests.get(url_jogos)
         soup = BeautifulSoup(resposta.text, 'html.parser')
 
         jogos = soup.find_all('a', href=True, class_=False)
@@ -41,6 +39,9 @@ class Jogos:
 
                 game_link = game['href'].strip() if 'href' in game.attrs else 'Unknown Link'
 
+                # Extract game statistics
+                stats = self.extract_game_statistics(game_link)
+
                 jogos_detalhes.append({
                     'league': league_name,
                     'status': status,
@@ -48,22 +49,35 @@ class Jogos:
                     'score1': score1,
                     'team2': team2,
                     'score2': score2,
-                    'link': game_link
+                    'link': game_link,
+                    'stats': stats
                 })
 
         with open('ao_vivo.json', 'w', encoding='utf-8') as json_file:
             json.dump(jogos_detalhes, json_file, ensure_ascii=False, indent=4)
 
-        #modo de usar: 'Jogos().jogo_ao_vivo()'
-        return jogos_detalhes
-    def probabilidade(self):
-        pass
+    def extract_game_statistics(self, game_link):
+        url_estatistica = self.url + game_link
+        resposta2 = requests.get(url_estatistica)
+        soup2 = BeautifulSoup(resposta2.text, 'html.parser')
+        tes = soup2.get_text()
+        print(tes)
 
-    def jogos_de_hoje(self):
-        pass
+        # Example extraction based on observed HTML structure
+        stats_section = soup2.find('div', class_='stats-section')
+        if stats_section:
+            statistics = []
+            stats_items = stats_section.find_all('div', class_='stat-item')
+            for stat_item in stats_items:
+                label = stat_item.find('div', class_='label').text.strip()
+                value = stat_item.find('div', class_='value').text.strip()
+                statistics.append({
+                    'label': label,
+                    'value': value
+                })
+            return statistics
+        else:
+            return [{'label': 'Stats Not Available', 'value': 'N/A'}]
 
-    def jogos_de_amanha(self):
-        pass
-
-
-
+if __name__ == "__main__":
+    Jogos().extract_game_statistics('/brasileirao-serie-a/20-06-2024-vitoria-x-atletico-mg.html')
