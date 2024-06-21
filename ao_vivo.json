@@ -1,62 +1,62 @@
 [
     {
+        "league": "Copa América",
+        "status": "6 MIN",
+        "team1": "Argentina",
+        "score1": "0",
+        "team2": "Canadá",
+        "score2": "0",
+        "link": "/copa-america/20-06-2024-argentina-x-canada.html",
+        "stats": null
+    },
+    {
         "league": "Campeonato Brasileiro",
-        "status": "INTERVALO",
+        "status": "53 MIN",
         "team1": "Flamengo",
         "score1": "1",
         "team2": "Bahia",
         "score2": "1",
         "link": "/brasileirao-serie-a/20-06-2024-flamengo-x-bahia.html",
-        "stats": [
-            {
-                "label": "Stats Not Available",
-                "value": "N/A"
-            }
-        ]
+        "stats": null
     },
     {
         "league": "Campeonato Brasileiro - Série D",
-        "status": "INTERVALO",
+        "status": "48 MIN",
         "team1": "Treze",
         "score1": "1",
         "team2": "Atlético-CE",
         "score2": "0",
         "link": "/brasileirao-serie-d/20-06-2024-treze-x-atletico-ce.html",
-        "stats": [
-            {
-                "label": "Stats Not Available",
-                "value": "N/A"
-            }
-        ]
+        "stats": null
     },
     {
         "league": "Campeonato Baiano - Segunda Divisão",
-        "status": "83 MIN",
+        "status": "95 MIN",
         "team1": "Galícia",
         "score1": "0",
         "team2": "Vitória da Conquista",
         "score2": "0",
         "link": "/baiano-2-divisao/20-06-2024-galicia-x-vitoria-da-conquista.html",
-        "stats": [
-            {
-                "label": "Stats Not Available",
-                "value": "N/A"
-            }
-        ]
+        "stats": null
+    },
+    {
+        "league": "USL League One",
+        "status": "7 MIN",
+        "team1": "Forward Madison",
+        "score1": "0",
+        "team2": "Union Omaha",
+        "score2": "0",
+        "link": "/usl-league-one/20-06-2024-forward-madison-x-union-omaha.html",
+        "stats": null
     },
     {
         "league": "UWS",
-        "status": "31 MIN",
+        "status": "43 MIN",
         "team1": "Michigan Legends Feminino",
-        "score1": "1",
+        "score1": "2",
         "team2": "Elite 14 Feminino",
         "score2": "0",
         "link": "/uws/20-06-2024-michigan-legends-feminino-x-elite-14-feminino.html",
-        "stats": [
-            {
-                "label": "Stats Not Available",
-                "value": "N/A"
-            }
-        ]
+        "stats": null
     }
 ]
