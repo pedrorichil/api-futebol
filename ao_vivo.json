@@ -1,62 +1,32 @@
 [
     {
-        "league": "Copa América",
-        "status": "6 MIN",
-        "team1": "Argentina",
-        "score1": "0",
-        "team2": "Canadá",
-        "score2": "0",
-        "link": "/copa-america/20-06-2024-argentina-x-canada.html",
-        "stats": null
-    },
-    {
         "league": "Campeonato Brasileiro",
-        "status": "53 MIN",
-        "team1": "Flamengo",
-        "score1": "1",
-        "team2": "Bahia",
-        "score2": "1",
-        "link": "/brasileirao-serie-a/20-06-2024-flamengo-x-bahia.html",
-        "stats": null
-    },
-    {
-        "league": "Campeonato Brasileiro - Série D",
-        "status": "48 MIN",
-        "team1": "Treze",
-        "score1": "1",
-        "team2": "Atlético-CE",
-        "score2": "0",
-        "link": "/brasileirao-serie-d/20-06-2024-treze-x-atletico-ce.html",
-        "stats": null
-    },
-    {
-        "league": "Campeonato Baiano - Segunda Divisão",
-        "status": "95 MIN",
-        "team1": "Galícia",
-        "score1": "0",
-        "team2": "Vitória da Conquista",
-        "score2": "0",
-        "link": "/baiano-2-divisao/20-06-2024-galicia-x-vitoria-da-conquista.html",
-        "stats": null
-    },
-    {
-        "league": "USL League One",
-        "status": "7 MIN",
-        "team1": "Forward Madison",
-        "score1": "0",
-        "team2": "Union Omaha",
-        "score2": "0",
-        "link": "/usl-league-one/20-06-2024-forward-madison-x-union-omaha.html",
-        "stats": null
-    },
-    {
-        "league": "UWS",
-        "status": "43 MIN",
-        "team1": "Michigan Legends Feminino",
+        "status": "82 MIN",
+        "team1": "Palmeiras",
         "score1": "2",
-        "team2": "Elite 14 Feminino",
+        "team2": "Bragantino",
+        "score2": "1",
+        "link": "/brasileirao-serie-a/20-06-2024-palmeiras-x-bragantino.html",
+        "stats": null
+    },
+    {
+        "league": "Campeonato Brasileiro - Série B",
+        "status": "78 MIN",
+        "team1": "Ceará",
+        "score1": "0",
+        "team2": "Sport",
         "score2": "0",
-        "link": "/uws/20-06-2024-michigan-legends-feminino-x-elite-14-feminino.html",
+        "link": "/brasileirao-serie-b/20-06-2024-ceara-x-sport.html",
+        "stats": null
+    },
+    {
+        "league": "EUA - WPSL",
+        "status": "52 MIN",
+        "team1": "Griffins Feminino",
+        "score1": "0",
+        "team2": "Utah Surf Feminino",
+        "score2": "1",
+        "link": "/eua-wpsl/20-06-2024-griffins-feminino-x-utah-surf-feminino.html",
         "stats": null
     }
 ]

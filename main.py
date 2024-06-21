@@ -61,31 +61,11 @@ class Jogos:
         resposta2 = requests.get(url_estatistica)
         soup2 = BeautifulSoup(resposta2.text, 'html.parser')
         soup3 = soup2.get_text()
+        soup3 = soup3.replace("        ", "")
+        soup3 = soup3.replace("    ", "")
         linhas = soup3.splitlines()
-
-        # Filtrar as linhas que não estão em branco
         linhas_nao_em_branco = [linha for linha in linhas if linha.strip() != '']
-
-
-
-
-
-        #print(linhas_nao_em_branco)
-        # Example extraction based on observed HTML structure
-        #stats_section = soup3.find('div', class_='stats-section')
-        #if stats_section:
-        #    statistics = []
-        #    stats_items = stats_section.find_all('div', class_='stat-item')
-        #    for stat_item in stats_items:
-        #        label = stat_item.find('div', class_='label').text.strip()
-        #        value = stat_item.find('div', class_='value').text.strip()
-        #        statistics.append({
-        #            'label': label,
-        #            'value': value
-        #        })
-        #    return statistics
-        #else:
-        #    return [{'label': 'Stats Not Available', 'value': 'N/A'}]
+        print(linhas_nao_em_branco)
 
 if __name__ == "__main__":
     Jogos().extract_game_statistics('/brasileirao-serie-a/20-06-2024-vitoria-x-atletico-mg.html')
