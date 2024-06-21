@@ -6,10 +6,9 @@ class Jogos:
     def __init__(self):
         self.url = "https://www.placardefutebol.com.br"
         url_jogos = self.url + '/jogos-em-andamento'
-        resposta = requests.get(url_jogos)
-        soup = BeautifulSoup(resposta.text, 'html.parser')
-
-        jogos = soup.find_all('a', href=True, class_=False)
+        jogos_html = requests.get(url_jogos)
+        page = BeautifulSoup(jogos_html.text, 'html.parser')
+        jogos = page.find_all('a', href=True, class_=False)
         jogos_detalhes = []
 
         for game in jogos:
@@ -21,6 +20,7 @@ class Jogos:
 
             if status != 'Unknown Status':
                 teams = game.find_all('div', class_='team-name')
+
                 if len(teams) >= 2:
                     team1 = teams[0].text.strip()
                     team2 = teams[1].text.strip()
@@ -38,38 +38,34 @@ class Jogos:
 
                 game_link = game['href'].strip() if 'href' in game.attrs else 'Unknown Link'
 
-                # Extract game statistics
-                stats = self.extract_match_info(game_link)
-                stats = stats.splitlines()
-
+                stats = self.extrair_estatistica(game_link)  # Get statistics using the method
+                nome_jogos = game_link.split('/')
 
                 jogos_detalhes.append({
-                    'league': league_name,
+                    'liga': league_name,
                     'status': status,
-                    'team1': team1,
-                    'score1': score1,
-                    'team2': team2,
-                    'score2': score2,
+                    'time': team1,
+                    'gols': score1,
+                    'time2': team2,
+                    'gols2': score2,
                     'link': game_link,
                     'stats': stats
                 })
 
+        # Write all game details to a JSON file
         with open('ao_vivo.json', 'w', encoding='utf-8') as json_file:
             json.dump(jogos_detalhes, json_file, ensure_ascii=False, indent=4)
 
-    def extract_match_info(self, game_link):
+    def extrair_estatistica(self, game_link):
         static = self.url + game_link
         resposta = requests.get(static)
         soup = BeautifulSoup(resposta.text, 'html.parser')
-
-        # Find the div with class 'container content match-info'
         match_info_div = soup.find('div', class_='container content match-info')
 
-        # Extract the content as a string
         if match_info_div:
-            return match_info_div.get_text(separator='\n', strip=True)
+            return match_info_div.get_text(separator='|', strip=True)
         else:
             return "Match info content not found"
 
-
-
+if __name__ == "__main__":
+    Jogos()
